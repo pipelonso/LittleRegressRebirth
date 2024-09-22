@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="Mechanic design document.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="354.2605"
+     inkscape:cy="388.90873"
+     inkscape:window-width="1317"
+     inkscape:window-height="734"
+     inkscape:window-x="45"
+     inkscape:window-y="4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#6f6f6f;fill-opacity:1;stroke:none;stroke-width:0.534058;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect35"
+       width="192.61105"
+       height="6.6430469"
+       x="8.7399721"
+       y="53.813328"
+       ry="3.1237354" />
+    <rect
+       style="fill:#f3a2a2;stroke-width:6.72389;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="66.766953"
+       height="11.341311"
+       x="6.9348221"
+       y="5.5871072"
+       ry="2.0912023" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.66539px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';fill:#ffffff;fill-opacity:1;stroke-width:1.3521;stroke-linecap:round;stroke-linejoin:round"
+       x="9.2897711"
+       y="12.793677"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.3521"
+         x="9.2897711"
+         y="12.793677">Mechanic design document</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#3d3d3d;stroke-width:0.592;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2"
+       width="196.03867"
+       height="98.505737"
+       x="6.9806781"
+       y="51.800652"
+       ry="4.3794932" />
+    <rect
+       style="fill:#cfb4b4;fill-opacity:1;stroke-width:9.07904;stroke-linecap:round;stroke-linejoin:round"
+       id="rect3"
+       width="66.312347"
+       height="26.83021"
+       x="6.7980208"
+       y="20.625101"
+       ry="2.4327106" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';fill:#000000;fill-opacity:0;stroke:#b58c8c;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.5, 2.5;stroke-dashoffset:0;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="87.806786"
+       y="40.20039"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.77443px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#484848;fill-opacity:1;stroke:none;stroke-width:0.297198;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.48599, 1.48599;stroke-dashoffset:0;stroke-opacity:1"
+       x="8.4005318"
+       y="25.017361"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:0.297199"
+         x="8.4005318"
+         y="25.017361">Context</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.77443px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.297198;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.48599, 1.48599;stroke-dashoffset:0;stroke-opacity:1"
+       x="8.1359806"
+       y="29.159042"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.297199"
+         x="8.1359806"
+         y="29.159042">This document have to explain the </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.297199"
+         x="8.1359806"
+         y="33.877079"
+         id="tspan6">diferent mechanics into the datapack, like</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.297199"
+         x="8.1359806"
+         y="38.595116"
+         id="tspan7">pacifier mechanics, sleep mechanics </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.297199"
+         x="8.1359806"
+         y="43.313156"
+         id="tspan8">and more.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2a2a2a;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.5, 2.5;stroke-dashoffset:0;stroke-opacity:1"
+       x="10.496881"
+       y="58.924744"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="stroke-width:0.5"
+         x="10.496881"
+         y="58.924744">Baby bottle</tspan></text>
+    <rect
+       style="fill:#1e1e1e;fill-opacity:1;stroke:none;stroke-width:0.370207;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.85104, 1.85104;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect9"
+       width="43.647312"
+       height="38.512569"
+       x="8.9007702"
+       y="61.733089"
+       ry="1.3660754" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.68365px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:0.368791;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.84396, 1.84396;stroke-dashoffset:0;stroke-opacity:1"
+       x="10.515083"
+       y="66.992203"
+       id="text10"><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="66.992203"
+         id="tspan18">The baby bottle is a </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="72.846764"
+         id="tspan19">special item that can </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="78.701324"
+         id="tspan21">cause the player </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="84.555893"
+         id="tspan22">to feel the urge to go</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="90.410454"
+         id="tspan23"> to the bathroom,</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#5a5a5a;fill-opacity:1;stroke-width:0.368791"
+         x="10.515083"
+         y="96.265015"
+         id="tspan24"> or feel like sleeping.</tspan></text>
+    <rect
+       style="fill:#1e1e1e;fill-opacity:1;stroke:none;stroke-width:0.147559;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.737796, 0.737796;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect24"
+       width="17.397156"
+       height="17.749802"
+       x="8.8014383"
+       y="102.31863"
+       ry="1.9831764" />
+    <path
+       style="fill:#f7f7f7;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.5, 2.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 13.006876,113.04467 2.679757,2.67976 6.306522,-6.30652 -2.623932,-2.75528 z"
+       id="path24"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#f7f7f7;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.5, 2.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 22.049424,109.36539 -2.620072,-2.809 c 0,0 0.762525,0.41264 1.23599,0.38283 0.473466,-0.0298 1.009046,-0.83157 1.425455,-0.34301 0.416409,0.48857 -0.428714,0.8447 -0.469154,1.33148 -0.04044,0.48678 0.427781,1.4377 0.427781,1.4377 z"
+       id="path25"
+       sodipodi:nodetypes="cczzzc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1e1e1e;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 30.278344,112.00605 9.140959,0 c 0,0 1.410578,0.29126 2.777239,-1.04717 1.36666,-1.33843 1.253504,-2.59126 1.253504,-2.59126 l 0,-4.82119"
+       id="path26"
+       sodipodi:nodetypes="cczcc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#1e1e1e;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path27"
+       cx="28.980692"
+       cy="111.97523"
+       r="1.2980186" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#1e1e1e;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle27"
+       cx="43.430882"
+       cy="102.24855"
+       r="1.2980186" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#343434;stroke-width:0.251479;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect27"
+       width="18.43343"
+       height="4.3378253"
+       x="33.152988"
+       y="139.56651"
+       ry="0.44614187" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.71491px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="13.094666"
+       y="142.34256"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045"
+         x="13.094666"
+         y="142.34256">if baby bottle is used</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#343434;stroke-width:0.286449;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 11.688202,142.13858 8.785065,-5.44856 8.742653,5.04541 -8.558024,5.38229 z"
+       id="path28"
+       sodipodi:nodetypes="ccccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#343434;stroke-width:0.323882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path29"
+       cx="20.452059"
+       cy="126.45615"
+       r="3.2929013" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.35281px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.111157;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="18.04804"
+       y="127.09518"
+       id="text29"><tspan
+         sodipodi:role="line"
+         id="tspan29"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.111157"
+         x="18.04804"
+         y="127.09518">start</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#343434;stroke-width:0.379114;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 20.452059,129.74906 0.02119,6.94096"
+       id="path30" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#343434;stroke-width:0.252743;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 29.21592,141.73543 h 3.873942"
+       id="path31" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.71491px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="29.370989"
+       y="141.23767"
+       id="text31"><tspan
+         sodipodi:role="line"
+         id="tspan31"
+         style="fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045"
+         x="29.370989"
+         y="141.23767">do</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.71491px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="33.60524"
+       y="141.05133"
+       id="text32"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         style="fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045"
+         x="33.60524"
+         y="141.05133">Increase pee meter</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#040404;fill-opacity:1;stroke:none;stroke-width:0.189045"
+         x="33.60524"
+         y="143.19496"
+         id="tspan33">Increase tiredness meter</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#343434;stroke-width:0.205138;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect33"
+       width="145.71463"
+       height="85.658012"
+       x="55.683544"
+       y="62.26553"
+       ry="1.7366912" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04488px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#10bb00;fill-opacity:1;stroke:none;stroke-width:0.0954223;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="57.049789"
+       y="65.678841"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         style="fill:#10bb00;fill-opacity:1;stroke:none;stroke-width:0.0954223;stroke-opacity:1"
+         x="57.049789"
+         y="65.678841">&gt;_ MCFUNCTION EXPLAIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04488px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#9abb00;fill-opacity:1;stroke:none;stroke-width:0.0954223;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="57.049789"
+       y="69.585739"
+       id="text35"><tspan
+         sodipodi:role="line"
+         id="tspan35"
+         style="fill:#9abb00;fill-opacity:1;stroke:none;stroke-width:0.0954223;stroke-opacity:1"
+         x="57.049789"
+         y="69.585739">TODO: EXPLAIN LOGIC HERE</tspan></text>
+  </g>
+</svg>
