@@ -1,0 +1,17 @@
+NBT MODEL DATA ARMOR LIST
+**********************************
+nappy : 1
+nappywet : 2
+nappypoo : 3
+basic_1_none (azul cohete) : 4
+basic_1_nappy (azul cohete) : 5
+basic_1_pee (azul cohete) : 6
+basic_1_poo (azul cohete) : 7
+santa : 8
+basic_2_none (rosada flor) : 9
+10 basic_2_nappy (rosada flor) : 10
+basic_2_pee (rosada flor) : 11
+basic_2_poo (rosada flor) : 12 
+***********************************
+
+**Falta programar crafteo de ropa**
