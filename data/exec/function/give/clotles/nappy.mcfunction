@@ -1,0 +1,1 @@
+execute as @s at @s run give @s minecraft:iron_leggings[minecraft:equippable={slot:legs,model:white_nappy}, custom_data={"padding":2}, minecraft:item_model=white_nappy]

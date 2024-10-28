@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture":"minecraft:white_nappy"
+            }
+        ],
+        "humanoid_leggings" : [
+            {
+                "texture":"minecraft:white_nappy_pee"
+            }
+        ]
+    }
+}
