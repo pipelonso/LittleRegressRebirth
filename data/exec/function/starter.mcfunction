@@ -142,6 +142,7 @@ scoreboard objectives add lrfearstate dummy
 #score to activate or deactivate nappy alert on potty
 scoreboard objectives add lrnappalert dummy
 
+function exec:lists/clotles/diapers
 
 tellraw @a {"text": "---------" , "color": "yellow"}
 tellraw @a {"text": "LittleRegress [ACTIVATED DATAPACK] V Beta 1.3 [1.20.4 Edition] ","color": "yellow"}

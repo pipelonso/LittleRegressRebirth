@@ -1,0 +1,1 @@
+data modify storage diapers list set value ["white_nappy", "blue_nappy", "gray_kity_nappy", "pink_nappy"]
