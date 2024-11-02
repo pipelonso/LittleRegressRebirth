@@ -1,0 +1,1 @@
+$data modify storage cubikframework $(name) set value "$(value)"
