@@ -3,4 +3,5 @@ tellraw @s {"text": "This message only appears the first time you enter the worl
 tellraw @s {"text": "Little Regress is a datapack designed to allow Minecraft users to customize their age regression experience within Minecraft."}
 tellraw @s {"text": "We can start with some quick configurations:."}
 tellraw @s [{"text": "[More info]","color":"blue", "clickEvent": {"action": "open_url", "value": "https://pipelonso.github.io/LittleRegress-WebSite/"}}, {"text": " [Settings]", "color": "blue", "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"}}]
+tellraw @s {"text": " [ SETTINGS ] ", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }
 execute if score @s lrfrsenter matches ..0 run scoreboard players set @s lrfrsenter 1

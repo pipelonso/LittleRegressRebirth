@@ -1,1 +1,2 @@
-tellraw @s {"text": " -- Welcome to littleRegress Rebirth --","color":"yellow"}
+tellraw @s {"text": " -- Welcome to LittleRegress Rebirth --","color":"yellow"}
+tellraw @s {"text": " [ SETTINGS ]", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }

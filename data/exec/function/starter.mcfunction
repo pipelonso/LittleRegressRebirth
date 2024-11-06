@@ -141,10 +141,15 @@ scoreboard objectives add lruitype dummy
 scoreboard objectives add lrfearstate dummy
 #score to activate or deactivate nappy alert on potty
 scoreboard objectives add lrnappalert dummy
+#scoreboard to select a languaje default 0 english
+scoreboard objectives add abtlang dummy
+
 
 function exec:lists/clotles/diapers
 
 tellraw @a {"text": "---------" , "color": "yellow"}
-tellraw @a {"text": "LittleRegress [ACTIVATED DATAPACK] V Beta 1.3 [1.20.4 Edition] ","color": "yellow"}
+tellraw @a {"text": "LittleRegress Rebirth [ACTIVATED DATAPACK] V DEV 01 ","color": "yellow"}
 tellraw @a {"text": "---------" , "color": "yellow"}
 tellraw @a {"text": "This version could contain bugs you can report that sending a mail to abthinksdl@gmail.com" , "color": "red"}
+
+tellraw @a {"text": " [ SETTINGS ] ", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }

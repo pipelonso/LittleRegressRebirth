@@ -7,3 +7,6 @@ execute as @a at @a if score @p lrfrsenter matches 0 run function exec:chat/welc
 
 
 
+
+
+

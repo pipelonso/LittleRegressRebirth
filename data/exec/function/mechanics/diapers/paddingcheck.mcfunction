@@ -1,0 +1,1 @@
+execute if items entity @s armor.legs iron_leggings[custom_data={padding:1}] run say hola
