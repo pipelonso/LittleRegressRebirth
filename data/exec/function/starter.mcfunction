@@ -144,6 +144,7 @@ scoreboard objectives add lrnappalert dummy
 #scoreboard to select a languaje default 0 english
 scoreboard objectives add abtlang dummy
 
+scoreboard objectives add nappytype dummy
 
 function exec:lists/clotles/diapers
 
