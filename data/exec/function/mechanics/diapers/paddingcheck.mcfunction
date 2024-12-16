@@ -1,1 +1,1 @@
-execute if items entity @s armor.legs iron_leggings[custom_data={padding:1}] run say hola
+execute as @s at @s run execute if items entity @s armor.legs iron_leggings[minecraft:custom_data={"padding":0}] run say hola

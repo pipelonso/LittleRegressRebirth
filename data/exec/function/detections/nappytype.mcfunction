@@ -1,0 +1,1 @@
+execute if items entity @s armor.legs iron_leggings[minecraft:custom_data={i:1}] run tellraw @a "HOLAAAA"

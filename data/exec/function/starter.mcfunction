@@ -142,15 +142,24 @@ scoreboard objectives add lrfearstate dummy
 #score to activate or deactivate nappy alert on potty
 scoreboard objectives add lrnappalert dummy
 #scoreboard to select a languaje default 0 english
-scoreboard objectives add abtlang dummy
 
-scoreboard objectives add nappytype dummy
+scoreboard objectives add lrnappytype dummy
 
 function exec:lists/clotles/diapers
 
-tellraw @a {"text": "---------" , "color": "yellow"}
-tellraw @a {"text": "LittleRegress Rebirth [ACTIVATED DATAPACK] V DEV 01 ","color": "yellow"}
-tellraw @a {"text": "---------" , "color": "yellow"}
-tellraw @a {"text": "This version could contain bugs you can report that sending a mail to abthinksdl@gmail.com" , "color": "red"}
+#english
+tellraw @a[scores={lrlang = 0}] {"text": "---------" , "color": "yellow"}
+tellraw @a[scores={lrlang = 0}] {"text": "LittleRegress Rebirth [ACTIVATED DATAPACK] V DEV 01 ","color": "yellow"}
+tellraw @a[scores={lrlang = 0}] {"text": "---------" , "color": "yellow"}
+tellraw @a[scores={lrlang = 0}] {"text": "This version could contain bugs you can report that sending a mail to abthinksdl@gmail.com" , "color": "red"}
+tellraw @a[scores={lrlang = 0}] ""
+tellraw @a[scores={lrlang = 0}] {"text": " [ SETTINGS ] ", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }
 
-tellraw @a {"text": " [ SETTINGS ] ", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }
+#spanish
+tellraw @a[scores={lrlang = 1}] {"text": "---------" , "color": "yellow"}
+tellraw @a[scores={lrlang = 1}] {"text": "LittleRegress Rebirth [PAQUETE DE DATOS ACTIVADO] V DEV 01 ","color": "yellow"}
+tellraw @a[scores={lrlang = 1}] {"text": "---------" , "color": "yellow"}
+tellraw @a[scores={lrlang = 1}] {"text": "Esta version puede contener bugs, puedes reportalos al correo abthinksdl@gmail.com" , "color": "red"}
+tellraw @a[scores={lrlang = 1}] ""
+tellraw @a[scores={lrlang = 1}] {"text": " [ CONFIGURACION ] ", "color": "green" , "clickEvent": {"action": "run_command", "value": "/function exec:chat/settings"} }
+
