@@ -143,8 +143,7 @@ scoreboard objectives add lruitype dummy
 scoreboard objectives add lrfearstate dummy
 #score to activate or deactivate nappy alert on potty
 scoreboard objectives add lrnappalert dummy
-#scoreboard to select a languaje default 0 english
-
+#define the type of diaper
 scoreboard objectives add lrnappytype dummy
 
 scoreboard objectives add ckfvalidcase dummy
