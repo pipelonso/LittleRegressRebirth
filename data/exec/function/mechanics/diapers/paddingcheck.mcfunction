@@ -1,1 +1,3 @@
-execute as @s at @s run execute if items entity @s armor.legs iron_leggings[minecraft:custom_data={"padding":0}] run say hola
+data modify storage cubikframework validations.value set from entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".padding
+execute store result score @s ckfvalidcase run data get storage cubikframework validations.value
+return run scoreboard players get @s ckfvalidcase

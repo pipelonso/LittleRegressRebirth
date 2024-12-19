@@ -121,6 +121,8 @@ scoreboard objectives add lrforcerotation dummy
 scoreboard objectives add lrlastgamemode dummy
 #used to represent the player age
 scoreboard objectives add lrage dummy "Age"
+# used to set a progresive scale to the player bassed in age
+scoreboard objectives add lragescale dummy
 #used to save the age state of the player [static,incremental]
 scoreboard objectives add lrstateage dummy
 #used like a cronomert to increment the age
@@ -144,6 +146,8 @@ scoreboard objectives add lrnappalert dummy
 #scoreboard to select a languaje default 0 english
 
 scoreboard objectives add lrnappytype dummy
+
+scoreboard objectives add ckfvalidcase dummy
 
 function exec:lists/clotles/diapers
 

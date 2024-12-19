@@ -7,7 +7,9 @@ execute as @a at @a unless score @s lrage matches 1.. run scoreboard players set
 # Execute just the firts time that the user enter world
 execute as @a at @a if score @p lrfrsenter matches 0 run function exec:chat/welcome
 
+# setting up starter values to initial scores
 execute as @a at @a unless score @s lrlang matches 0 run execute unless score @s lrlang matches 1 run scoreboard players set @s lrlang 0
+execute as @a at @a unless score @s lragescale matches 0 run execute unless score @s lragescale matches 1 run scoreboard players set @s lragescale 0
 
 
 
