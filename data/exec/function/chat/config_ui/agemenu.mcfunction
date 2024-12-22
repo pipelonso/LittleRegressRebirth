@@ -8,3 +8,4 @@ tellraw @s[scores={lrlang = 1, lragescale=1}] {"text": "[✅] Ajustar la altura 
 
 tellraw @s[scores={lrlang = 0, lragescale=0}] {"text": "[❌] Adjust height according to age", "color": "green", "clickEvent": {"action": "run_command","value": "/function exec:chat/config_ui/reloads/reloadagemenuscale {\"active\":1}"}}
 tellraw @s[scores={lrlang = 1, lragescale=0}] {"text": "[❌] Ajustar la altura conforme la edad", "color": "green", "clickEvent": {"action": "run_command","value": "/function exec:chat/config_ui/reloads/reloadagemenuscale {\"active\":1}"}}
+

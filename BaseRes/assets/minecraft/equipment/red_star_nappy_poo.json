@@ -1,0 +1,9 @@
+{
+    "layers": {
+        "humanoid_leggings" : [
+            {
+                "texture":"minecraft:red_star_nappy_poo"
+            }
+        ]
+    }
+}
