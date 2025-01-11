@@ -1,0 +1,40 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_leggings"
+    },
+    "cases": [
+      {
+        "when": "white_nappy",
+        "model": {
+          "type": "model",
+          "model": "item/white_nappy"
+        }
+      },
+      {
+        "when": "white_nappy_pee",
+        "model": {
+          "type": "model",
+          "model": "item/white_nappy_pee"
+        }
+      },
+      {
+        "when": "blue_nappy",
+        "model": {
+          "type": "model",
+          "model": "item/blue_nappy"
+        }
+      },
+      {
+        "when": "blue_nappy_pee",
+        "model": {
+          "type": "model",
+          "model": "item/blue_nappy"
+        }
+      }
+    ]
+  }
+}
