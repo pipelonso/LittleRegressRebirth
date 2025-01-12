@@ -32,7 +32,14 @@
         "when": "blue_nappy_pee",
         "model": {
           "type": "model",
-          "model": "item/blue_nappy"
+          "model": "item/blue_nappy_pee"
+        }
+      },
+      {
+        "when": "blue_nappy_poo",
+        "model": {
+          "type": "model",
+          "model": "item/blue_nappy_poo"
         }
       }
     ]
