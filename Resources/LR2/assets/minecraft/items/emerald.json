@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/emerald"
+    },
+    "cases": [
+      {
+        "when": "baby_botle",
+        "model": {
+          "type": "model",
+          "model": "item/baby_botle_base"
+        }
+      },
+        {
+        "when": "baby_botle_milk",
+        "model": {
+          "type": "model",
+          "model": "item/baby_botle_milk"
+        }
+      }
+    ]
+  }
+}

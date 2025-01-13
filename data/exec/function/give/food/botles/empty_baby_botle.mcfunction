@@ -1,0 +1,1 @@
+give @s emerald[consumable={animation:"drink", consume_seconds:10, has_consume_particles:false, sound:{sound_id:"item.honey_bottle.drink"}}, custom_model_data={strings:["baby_botle"]}]

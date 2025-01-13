@@ -4,7 +4,7 @@
     "property": "custom_model_data",
     "fallback": {
       "type": "model",
-      "model": "block/green_concrete"
+      "model": "item/carrot_on_a_stick"
     },
     "cases": [
       {
