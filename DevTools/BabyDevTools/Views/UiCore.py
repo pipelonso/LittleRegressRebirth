@@ -1,4 +1,5 @@
 import customtkinter
+from Controllers.BabyBottleController import BabyBottleController
 
 
 class UiCore:
@@ -21,6 +22,9 @@ class UiCore:
 
         app_subtitle_label = customtkinter.CTkLabel(sup_frame,
                                                     text="⚒ Devtools for babies 🍼")
+
+        baby_bottle_controller = BabyBottleController()
+        baby_bottle_controller.generate_variations()
 
         app_subtitle_label.pack(padx=2, pady=2, fill='x')
         self.app.mainloop()
