@@ -4,6 +4,7 @@ import customtkinter
 from Controllers.BabyBottleController import BabyBottleController
 from PIL import Image, ImageTk
 from Views.Modules.SelectWorld import SelectWorld
+from Views.Modules.EditorMain import EditorMain
 
 
 class UiCore:
@@ -49,10 +50,17 @@ class UiCore:
                                                       command=lambda: self.show_select_world_module())
         enter_editor_button.pack(padx=5, pady=5, fill='both', expand=True)
 
-        self.select_world_module = SelectWorld(general_frame)
+        self.select_world_module = SelectWorld(general_frame, self)
+
+        self.editor_main = EditorMain(general_frame, self)
 
         self.app.mainloop()
 
+        pass
+
+    def init_editor_in_world(self, world: str):
+        self.editor_main.set_world(world)
+        self.editor_main.pack(padx=10, pady=10, fill='both', expand=True)
         pass
 
     def place_initial_menu_item(self, event):
