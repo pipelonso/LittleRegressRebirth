@@ -18,7 +18,7 @@ class SelectWorld:
         else:
             self.worlds_path = os.path.join(os.path.expanduser("~"), ".minecraft", "saves")
 
-        self.general_frame = customtkinter.CTkFrame(master)
+        self.general_frame = customtkinter.CTkFrame(master, fg_color='#e1d1b8')
 
         self.header_frame = customtkinter.CTkFrame(self.general_frame)
         self.header_frame.pack(padx=5, pady=4, fill='x')
@@ -78,7 +78,6 @@ class SelectWorld:
 
             image_path = os.path.join(self.worlds_path, world, 'icon.png')
             if os.path.exists(image_path):
-                print(image_path)
                 image = Image.open(image_path)
                 image = image.resize((64, 64))
                 img_tk = ImageTk.PhotoImage(image)
