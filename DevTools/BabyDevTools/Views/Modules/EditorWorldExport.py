@@ -9,7 +9,13 @@ class EditorWorldExport:
                  core: Any
                  ):
 
+        self.master = master
+        self.core = core
+
         self.general_frame = customtkinter.CTkFrame(master)
+
+        self.assets_template_name = 'LR2'
+        self.compile_folder = 'out'
 
         pass
 

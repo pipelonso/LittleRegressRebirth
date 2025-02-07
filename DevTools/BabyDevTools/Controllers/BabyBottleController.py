@@ -90,13 +90,13 @@ class BabyBottleController:
                         for covers in self.cover_textures:
                             for contents in self.content_textures:
                                 array_content['textures'][str(self.order_glass)] = (
-                                        'glass/' + glasses.replace('.png', '')
+                                        'item/glass/' + glasses.replace('.png', '')
                                 )
                                 array_content['textures'][str(self.order_cover)] = (
-                                        'cover/' + covers.replace('.png', '')
+                                        'item/cover/' + covers.replace('.png', '')
                                 )
                                 array_content['textures'][str(self.order_content)] = (
-                                        'content/' + contents.replace('.png', '')
+                                        'item/content/' + contents.replace('.png', '')
                                 )
 
                                 file_name = self._format_to_file_name(glasses, contents, covers)
@@ -107,7 +107,7 @@ class BabyBottleController:
                                 with (open(os.path.join(self.out_path, f'{file_name}.json'), "w") as
                                       file
                                       ):
-                                    file.write(json.dumps(array_content))
+                                    file.write(json.dumps(array_content, indent=10, skipkeys=True))
 
                                 pass
                         pass

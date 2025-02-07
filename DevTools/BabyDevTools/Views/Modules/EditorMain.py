@@ -80,7 +80,7 @@ class EditorMain:
         pacy_module_button.pack(padx=2, pady=2)
         pacy_module_button.get_canvas().create_image(32, 32, image=self.pacy_img_tk)
 
-        self.baby_bottle_module = EditorBabyBottleModule(self.module_frame, core)
+        self.baby_bottle_module = EditorBabyBottleModule(self.module_frame, core, self)
 
         self.editor_world_export_module = EditorWorldExport(self.module_frame, core)
         self.show_export_module()
