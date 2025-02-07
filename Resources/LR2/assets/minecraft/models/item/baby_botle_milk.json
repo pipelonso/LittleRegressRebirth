@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "item/empty_baby_bottle",
-		"1": "iteme/milk_baby_bottle",
+		"1": "item/milk_baby_bottle",
 		"particle": "empty_baby_bottle"
 	},
 	"elements": [
