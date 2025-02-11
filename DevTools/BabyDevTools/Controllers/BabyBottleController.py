@@ -20,6 +20,8 @@ class BabyBottleController:
         glass_path = project_root / "Resources" / "baby_botle_registry" / "glass"
         self.out_path = project_root / "Resources" / "baby_botle_registry" / "out"
 
+        self.model_list_path = project_root / "Resources" / "baby_botle_registry" / "generated" / "model" / "emerald.json"
+
         self.cover_textures = [
             f for f in os.listdir(cover_path) if os.path.isfile(os.path.join(cover_path, f))
                                                  and f.endswith('cover.png')
@@ -34,6 +36,9 @@ class BabyBottleController:
             f for f in os.listdir(content_path) if os.path.isfile(os.path.join(content_path, f))
                                                    and f.endswith('content.png')
         ]
+
+        self.generated_file_names = []
+        self.generated_human_names = []
 
         pass
 
@@ -113,7 +118,38 @@ class BabyBottleController:
                         pass
                     pass
 
+                    self.generated_file_names = file_names
+                    self.generated_human_names = human_names
+
                     print(file_names)
                     print(human_names)
 
         pass
+
+    def generate_model_content(self):
+
+        if os.path.exists(self.model_list_path):
+            content = open(self.model_list_path, 'r').read()
+            array_content = json.loads(content)
+
+            cases_array = []
+
+            for file_name in self.generated_file_names:
+
+                bottle = {
+                    "when": file_name,
+                    "model": {
+                        "type": "model",
+                        "model": f"item/{file_name}"
+                    }
+                }
+
+                cases_array.append(bottle)
+
+            array_content['model']['cases'] = cases_array
+
+            with (open(os.path.join(self.model_list_path), "w") as
+                  file
+                  ):
+                file.write(json.dumps(array_content, indent=2, skipkeys=True))
+
