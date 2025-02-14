@@ -6,7 +6,16 @@ class FileSystemController:
 
     def __init__(self):
         self.path = ''
+
+        if os.name == "nt":  # Windows
+            self.worlds_path = os.path.join(os.getenv("APPDATA"), ".minecraft", "saves")
+        else:
+            self.worlds_path = os.path.join(os.path.expanduser("~"), ".minecraft", "saves")
+
         pass
+
+    def get_worlds_path(self) -> str:
+        return self.worlds_path
 
     def set_path(self, path: str):
         self.path = path
@@ -28,3 +37,7 @@ class FileSystemController:
                 content["files"].append(item)
 
         return content
+
+    @staticmethod
+    def make_folder_tail(path: str):
+        os.makedirs(path)
