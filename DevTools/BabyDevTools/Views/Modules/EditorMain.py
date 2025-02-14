@@ -82,7 +82,7 @@ class EditorMain:
 
         self.baby_bottle_module = EditorBabyBottleModule(self.module_frame, core, self)
 
-        self.editor_world_export_module = EditorWorldExport(self.module_frame, core)
+        self.editor_world_export_module = EditorWorldExport(self.module_frame, core, self)
         self.show_export_module()
 
         pass
