@@ -148,6 +148,9 @@ scoreboard objectives add lrnappytype dummy
 
 scoreboard objectives add ckfvalidcase dummy
 
+scoreboard objectives add lrbottle dummy
+scoreboard objectives add lrbottleuse minecraft.used:emerald
+
 function exec:lists/clotles/diapers
 
 #english
