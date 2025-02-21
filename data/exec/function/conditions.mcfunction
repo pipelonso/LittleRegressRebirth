@@ -11,9 +11,9 @@ execute as @a at @a if score @p lrfrsenter matches 0 run function exec:chat/welc
 execute as @a at @a unless score @s lrlang matches 0 run execute unless score @s lrlang matches 1 run scoreboard players set @s lrlang 0
 execute as @a at @a unless score @s lragescale matches 0 run execute unless score @s lragescale matches 1 run scoreboard players set @s lragescale 0
 
+execute as @a at @a run function exec:detections/is_selected_bottle
+execute as @a at @a run execute if score @s lrbottle matches 1 run execute if score @s lrbottleuse matches 1.. run function exec:mechanics/bottles/use_bottle
 
-
-
-
+execute as @a at @a if score @s lrpeemeter matches 1.. run function exec:mechanics/potty/pee_updater
 
 
