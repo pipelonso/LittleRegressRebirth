@@ -1,0 +1,1 @@
+$data modify storage cubikframework setters.index set value $(index)

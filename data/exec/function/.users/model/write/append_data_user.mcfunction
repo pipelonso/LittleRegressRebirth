@@ -1,0 +1,2 @@
+$tellraw @a {"color": "green", "text": "data merge storage cubikframework {\"model\":{\"users\":{\"user\":{\"$(uuid0)\":{\"$(uuid1)\":{\"$uuid2\":{\"$uuid3\":{\"$(append_index)\":$(append_value)} } } } } } } }"}
+$data merge storage cubikframework {"model":{"users":{"user":{"$(uuid0)":{"$(uuid1)":{"$(uuid2)":{"$(uuid3)":{"$(append_index)":$(append_value)} } } } } } } }
