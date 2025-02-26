@@ -90,10 +90,15 @@ class BabyBottleController:
 
                     human_names = []
                     file_names = []
+                    empty_generations = []
 
                     for glasses in self.glass_textures:
                         for covers in self.cover_textures:
                             for contents in self.content_textures:
+                                extract = contents.replace('_content.png', '')
+                                empty_generations.append(
+                                    self._format_to_file_name(glasses, 'empty_content.png', covers)
+                                )
                                 array_content['textures'][str(self.order_glass)] = (
                                         'item/glass/' + glasses.replace('.png', '')
                                 )
@@ -120,6 +125,7 @@ class BabyBottleController:
 
                     self.generated_file_names = file_names
                     self.generated_human_names = human_names
+                    print(empty_generations)
 
                     print(file_names)
                     print(human_names)
