@@ -62,3 +62,45 @@ class ExportController:
             shutil.copytree(data_path, data_folder, dirs_exist_ok=True)
 
         pass
+
+    def dev_compile_test_textures(self):
+
+        current_file = Path(__file__).resolve()
+        project_root = current_file.parents[3]
+
+        self.file_system_controller.set_path(os.path.join(str(project_root), "Resources/LR2"))
+        files_and_folders = self.file_system_controller.list_files_and_folders()
+
+        folders = files_and_folders['folders']
+        files = files_and_folders['files']
+
+        icon_find = 'pack.png' in files
+        data_find = 'assets' in folders
+        mcmeta_find = 'pack.mcmeta' in files
+
+        resources_folder_path = os.path.join(self.file_system_controller.get_general_resources_path(), "LR2")
+
+        if not os.path.exists(resources_folder_path):
+            self.file_system_controller.make_folder_tail(resources_folder_path)
+            pass
+
+        if icon_find:
+            icon_path = os.path.join(project_root, 'Resources/LR2/pack.png')
+            print(icon_path)
+            print(resources_folder_path)
+            shutil.copy(icon_path, resources_folder_path)
+
+        if mcmeta_find:
+            mcmeta_path = os.path.join(project_root, 'Resources/LR2/pack.mcmeta')
+            shutil.copy(mcmeta_path, resources_folder_path)
+
+        if data_find:
+            data_path = os.path.join(project_root, 'Resources/LR2')
+
+            if os.path.exists(resources_folder_path):
+                shutil.rmtree(resources_folder_path)
+
+            self.file_system_controller.make_folder_tail(resources_folder_path)
+            shutil.copytree(data_path, resources_folder_path, dirs_exist_ok=True)
+
+        pass

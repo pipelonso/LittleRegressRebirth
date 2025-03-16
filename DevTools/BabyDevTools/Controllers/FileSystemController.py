@@ -12,10 +12,18 @@ class FileSystemController:
         else:
             self.worlds_path = os.path.join(os.path.expanduser("~"), ".minecraft", "saves")
 
+        if os.name == "nt":  # Windows
+            self.general_texture_path = os.path.join(os.getenv("APPDATA"), ".minecraft", "resourcepacks")
+        else:
+            self.general_texture_path = os.path.join(os.path.expanduser("~"), ".minecraft", "resourcepacks")
+
         pass
 
     def get_worlds_path(self) -> str:
         return self.worlds_path
+
+    def get_general_resources_path(self):
+        return self.general_texture_path
 
     def set_path(self, path: str):
         self.path = path
