@@ -8,290 +8,10 @@
     },
     "cases": [
       {
-        "when": "berry_juice_in_a_blue_pink_baby_bottle",
+        "when": "milk_in_a_yellow_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/berry_juice_in_a_blue_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_blue_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_blue_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_blue_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_blue_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_blue_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_blue_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_blue_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_blue_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_blue_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_blue_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_blue_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_blue_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_blue_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_blue_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_blue_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_blue_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_blue_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_blue_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_blue_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_blue_green_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_blue_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_blue_green_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_blue_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_blue_green_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_blue_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_blue_green_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_blue_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_blue_green_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_blue_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_blue_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_blue_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_blue_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_blue_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_blue_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_blue_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_blue_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_blue_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_blue_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_red_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_red_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_red_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_red_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_red_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_red_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_red_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_red_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_red_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_red_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_red_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_red_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_red_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_red_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_red_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_red_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_red_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_red_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_red_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_red_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_red_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_red_green_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_red_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_red_green_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_red_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_red_green_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_red_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_red_green_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_red_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_red_green_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_red_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_red_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_red_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_red_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_red_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_red_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_red_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_red_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_red_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_red_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_yellow_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_yellow_pink_baby_bottle"
+          "model": "item/milk_in_a_yellow_pink_baby_bottle"
         }
       },
       {
@@ -302,10 +22,10 @@
         }
       },
       {
-        "when": "milk_in_a_yellow_pink_baby_bottle",
+        "when": "apple_juice_in_a_yellow_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/milk_in_a_yellow_pink_baby_bottle"
+          "model": "item/apple_juice_in_a_yellow_pink_baby_bottle"
         }
       },
       {
@@ -316,59 +36,10 @@
         }
       },
       {
-        "when": "apple_juice_in_a_yellow_pink_baby_bottle",
+        "when": "berry_juice_in_a_yellow_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/apple_juice_in_a_yellow_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_yellow_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_yellow_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_yellow_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_yellow_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_yellow_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_yellow_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_yellow_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_yellow_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_yellow_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_yellow_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_yellow_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_yellow_green_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_yellow_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_yellow_green_baby_bottle"
+          "model": "item/berry_juice_in_a_yellow_pink_baby_bottle"
         }
       },
       {
@@ -379,10 +50,10 @@
         }
       },
       {
-        "when": "water_in_a_yellow_green_baby_bottle",
+        "when": "empty_yellow_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/water_in_a_yellow_green_baby_bottle"
+          "model": "item/empty_yellow_green_baby_bottle"
         }
       },
       {
@@ -393,17 +64,52 @@
         }
       },
       {
-        "when": "berry_juice_in_a_yellow_blue_baby_bottle",
+        "when": "water_in_a_yellow_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/berry_juice_in_a_yellow_blue_baby_bottle"
+          "model": "item/water_in_a_yellow_green_baby_bottle"
         }
       },
       {
-        "when": "empty_yellow_blue_baby_bottle",
+        "when": "berry_juice_in_a_yellow_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/empty_yellow_blue_baby_bottle"
+          "model": "item/berry_juice_in_a_yellow_green_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_yellow_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_yellow_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_yellow_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_yellow_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_yellow_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_yellow_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_yellow_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_yellow_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_yellow_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_yellow_yellow_baby_bottle"
         }
       },
       {
@@ -414,10 +120,10 @@
         }
       },
       {
-        "when": "water_in_a_yellow_blue_baby_bottle",
+        "when": "empty_yellow_blue_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/water_in_a_yellow_blue_baby_bottle"
+          "model": "item/empty_yellow_blue_baby_bottle"
         }
       },
       {
@@ -428,157 +134,17 @@
         }
       },
       {
-        "when": "berry_juice_in_a_transparent_pink_baby_bottle",
+        "when": "water_in_a_yellow_blue_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/berry_juice_in_a_transparent_pink_baby_bottle"
+          "model": "item/water_in_a_yellow_blue_baby_bottle"
         }
       },
       {
-        "when": "empty_transparent_pink_baby_bottle",
+        "when": "berry_juice_in_a_yellow_blue_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/empty_transparent_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_transparent_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_transparent_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_transparent_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_transparent_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_transparent_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_transparent_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_transparent_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_transparent_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_transparent_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_transparent_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_transparent_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_transparent_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_transparent_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_transparent_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_transparent_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_transparent_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_transparent_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_transparent_green_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_transparent_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_transparent_green_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_transparent_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_transparent_green_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_transparent_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_transparent_green_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_transparent_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_transparent_green_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_transparent_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_transparent_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_transparent_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_transparent_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_transparent_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_transparent_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_transparent_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_transparent_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_transparent_blue_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_transparent_blue_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_green_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_green_pink_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_green_pink_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_green_pink_baby_bottle"
+          "model": "item/berry_juice_in_a_yellow_blue_baby_bottle"
         }
       },
       {
@@ -589,10 +155,10 @@
         }
       },
       {
-        "when": "water_in_a_green_pink_baby_bottle",
+        "when": "empty_green_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/water_in_a_green_pink_baby_bottle"
+          "model": "item/empty_green_pink_baby_bottle"
         }
       },
       {
@@ -603,52 +169,17 @@
         }
       },
       {
-        "when": "berry_juice_in_a_green_yellow_baby_bottle",
+        "when": "water_in_a_green_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/berry_juice_in_a_green_yellow_baby_bottle"
+          "model": "item/water_in_a_green_pink_baby_bottle"
         }
       },
       {
-        "when": "empty_green_yellow_baby_bottle",
+        "when": "berry_juice_in_a_green_pink_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/empty_green_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "milk_in_a_green_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/milk_in_a_green_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "water_in_a_green_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/water_in_a_green_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "apple_juice_in_a_green_yellow_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/apple_juice_in_a_green_yellow_baby_bottle"
-        }
-      },
-      {
-        "when": "berry_juice_in_a_green_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/berry_juice_in_a_green_green_baby_bottle"
-        }
-      },
-      {
-        "when": "empty_green_green_baby_bottle",
-        "model": {
-          "type": "model",
-          "model": "item/empty_green_green_baby_bottle"
+          "model": "item/berry_juice_in_a_green_pink_baby_bottle"
         }
       },
       {
@@ -659,10 +190,10 @@
         }
       },
       {
-        "when": "water_in_a_green_green_baby_bottle",
+        "when": "empty_green_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/water_in_a_green_green_baby_bottle"
+          "model": "item/empty_green_green_baby_bottle"
         }
       },
       {
@@ -673,17 +204,52 @@
         }
       },
       {
-        "when": "berry_juice_in_a_green_blue_baby_bottle",
+        "when": "water_in_a_green_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/berry_juice_in_a_green_blue_baby_bottle"
+          "model": "item/water_in_a_green_green_baby_bottle"
         }
       },
       {
-        "when": "empty_green_blue_baby_bottle",
+        "when": "berry_juice_in_a_green_green_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/empty_green_blue_baby_bottle"
+          "model": "item/berry_juice_in_a_green_green_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_green_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_green_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_green_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_green_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_green_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_green_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_green_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_green_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_green_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_green_yellow_baby_bottle"
         }
       },
       {
@@ -694,10 +260,10 @@
         }
       },
       {
-        "when": "water_in_a_green_blue_baby_bottle",
+        "when": "empty_green_blue_baby_bottle",
         "model": {
           "type": "model",
-          "model": "item/water_in_a_green_blue_baby_bottle"
+          "model": "item/empty_green_blue_baby_bottle"
         }
       },
       {
@@ -705,6 +271,440 @@
         "model": {
           "type": "model",
           "model": "item/apple_juice_in_a_green_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_green_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_green_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_green_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_green_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_blue_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_blue_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_blue_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_blue_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_blue_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_blue_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_blue_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_blue_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_blue_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_blue_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_blue_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_blue_green_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_blue_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_blue_green_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_blue_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_blue_green_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_blue_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_blue_green_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_blue_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_blue_green_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_blue_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_blue_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_blue_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_blue_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_blue_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_blue_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_blue_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_blue_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_blue_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_blue_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_blue_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_blue_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_blue_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_blue_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_blue_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_blue_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_blue_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_blue_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_blue_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_blue_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_transparent_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_transparent_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_transparent_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_transparent_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_transparent_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_transparent_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_transparent_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_transparent_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_transparent_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_transparent_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_transparent_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_transparent_green_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_transparent_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_transparent_green_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_transparent_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_transparent_green_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_transparent_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_transparent_green_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_transparent_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_transparent_green_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_transparent_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_transparent_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_transparent_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_transparent_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_transparent_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_transparent_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_transparent_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_transparent_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_transparent_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_transparent_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_transparent_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_transparent_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_transparent_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_transparent_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_transparent_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_transparent_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_transparent_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_transparent_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_transparent_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_transparent_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_red_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_red_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_red_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_red_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_red_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_red_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_red_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_red_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_red_pink_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_red_pink_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_red_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_red_green_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_red_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_red_green_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_red_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_red_green_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_red_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_red_green_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_red_green_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_red_green_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_red_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_red_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_red_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_red_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_red_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_red_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_red_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_red_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_red_yellow_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_red_yellow_baby_bottle"
+        }
+      },
+      {
+        "when": "milk_in_a_red_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/milk_in_a_red_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "empty_red_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/empty_red_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "apple_juice_in_a_red_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/apple_juice_in_a_red_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "water_in_a_red_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/water_in_a_red_blue_baby_bottle"
+        }
+      },
+      {
+        "when": "berry_juice_in_a_red_blue_baby_bottle",
+        "model": {
+          "type": "model",
+          "model": "item/berry_juice_in_a_red_blue_baby_bottle"
         }
       }
     ]

@@ -30,6 +30,7 @@
       "minecraft:use_remainder": {
         "id": "minecraft:emerald",
         "components": {
+          "minecraft:custom_name": "\"Pepito\"",
           "minecraft:consumable": {
             "consume_seconds": 10,
             "animation": "drink",
@@ -45,7 +46,8 @@
             ]
           }
         }
-      }
+      },
+      "minecraft:custom_name": "\"Pepito\""
     },
     "count": 1,
     "id": "minecraft:emerald"
