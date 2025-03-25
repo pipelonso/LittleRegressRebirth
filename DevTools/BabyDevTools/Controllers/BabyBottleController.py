@@ -217,11 +217,38 @@ class BabyBottleController:
                                 pass
 
                             file_name = self._format_to_file_name(glasses, contents, covers)
+                            empty_name = self._format_to_human_name('empty_content.png')
+                            empty_variation = self._format_to_file_name(glasses, 'empty_content.png', covers)
+
+                            if "result" in array_content:
+                                if "components" in array_content["result"]:
+                                    if "minecraft:custom_model_data" in array_content["result"]["components"]:
+                                        array_content["result"]["components"]["minecraft:custom_model_data"]["strings"] = [file_name]
+                                        pass
+
+                                    human_name = self._format_to_human_name(contents)
+
+                                    if "minecraft:custom_name" in array_content["result"]["components"]:
+                                        array_content["result"]["components"]["minecraft:custom_name"] = '\"' + human_name + '\"'
+                                        pass
+
+                                    #empty variation
+                                    if "minecraft:use_remainder" in array_content["result"]["components"]:
+                                        if "components" in array_content["result"]["components"]["minecraft:use_remainder"]:
+                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_name"] = '\"' + empty_name + '\"'
+                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_model_data"]["strings"] = [empty_variation]
+                                            pass
+                                        pass
+                                    pass
+                                pass
+
+
+
 
                             with (open(os.path.join(self.crafting_out_path, f'{file_name}.json'), "w") as
                                   file
                                   ):
-                                file.write(json.dumps(array_content, indent=10, skipkeys=True))
+                                file.write(json.dumps(array_content, indent=4, skipkeys=True))
 
                             pass
 
