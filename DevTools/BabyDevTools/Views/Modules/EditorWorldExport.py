@@ -28,6 +28,10 @@ class EditorWorldExport:
 
         dev_export_button.pack(padx=2, pady=2, fill='both', expand=True)
 
+        texture_test_export_button = customtkinter.CTkButton(self.general_frame, text="Export textures",
+                                                             command=lambda : self.dev_compile_textures())
+        texture_test_export_button.pack(padx=2, pady=2, fill='both', expand=True)
+
         self.assets_template_name = 'LR2'
         self.compile_folder = 'out'
 
@@ -42,4 +46,9 @@ class EditorWorldExport:
     def dev_compile_template(self):
         self.export_controller.set_world(self.father.world)
         self.export_controller.dev_compile_template()
+        pass
+
+    def dev_compile_textures(self):
+        self.export_controller.set_world(self.father.world)
+        self.export_controller.dev_compile_test_textures()
         pass

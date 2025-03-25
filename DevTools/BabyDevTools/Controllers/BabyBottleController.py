@@ -20,6 +20,8 @@ class BabyBottleController:
         glass_path = project_root / "Resources" / "baby_botle_registry" / "glass"
         self.out_path = project_root / "Resources" / "baby_botle_registry" / "out"
 
+        self.crafting_out_path = project_root / "Resources" / "baby_botle_registry" / "craftings" / "generated"
+
         self.model_list_path = project_root / "Resources" / "baby_botle_registry" / "generated" / "model" / "emerald.json"
 
         self.cover_textures = [
@@ -39,6 +41,29 @@ class BabyBottleController:
 
         self.generated_file_names = []
         self.generated_human_names = []
+
+        self.crafting_glass_assignment = [
+            {"file": "blue_glass_texture.png", "item_name": "minecraft:blue_stained_glass"},
+            {"file": "green_glass_texture.png", "item_name": "minecraft:green_stained_glass"},
+            {"file": "red_glass_texture.png", "item_name": "minecraft:red_stained_glass"},
+            {"file": "transparent_glass_texture.png", "item_name": "minecraft:blue_stained_glass"},
+            {"file": "yellow_glass_texture.png", "item_name": "minecraft:yellow_stained_glass"}
+        ]
+
+        self.crafting_cover_assignment = [
+            {"file": "blue_cover.png", "item_name": "minecraft:blue_concrete"},
+            {"file": "green_cover.png", "item_name": "minecraft:green_concrete"},
+            {"file": "punk_cover.png", "item_name": "minecraft:punk_concrete"},
+            {"file": "yellow_cover.png", "item_name": "minecraft:yellow_concrete"}
+        ]
+
+        self.crafting_content_assignment = [
+            {"file": "apple_juice_content.png", "item_name": "minecraft:apple"},
+            {"file": "berry_juice_content.png", "item_name": "minecraft:berry"},
+            {"file": "empty_content.png", "item_name": ""},
+            {"file": "milk_content.png", "item_name": "minecraft:milk_bucket"},
+            {"file": "water_content.png", "item_name": "minecraft:water_bucket"}
+        ]
 
         pass
 
@@ -90,10 +115,15 @@ class BabyBottleController:
 
                     human_names = []
                     file_names = []
+                    empty_generations = []
 
                     for glasses in self.glass_textures:
                         for covers in self.cover_textures:
                             for contents in self.content_textures:
+
+                                empty_generations.append(
+                                    self._format_to_file_name(glasses, 'empty_content.png', covers)
+                                )
                                 array_content['textures'][str(self.order_glass)] = (
                                         'item/glass/' + glasses.replace('.png', '')
                                 )
@@ -120,9 +150,10 @@ class BabyBottleController:
 
                     self.generated_file_names = file_names
                     self.generated_human_names = human_names
-
-                    print(file_names)
-                    print(human_names)
+                    # print(empty_generations)
+                    #
+                    # print(file_names)
+                    # print(human_names)
 
         pass
 
@@ -153,3 +184,74 @@ class BabyBottleController:
                   ):
                 file.write(json.dumps(array_content, indent=2, skipkeys=True))
 
+    def generate_crafting_content_exports(self):
+
+        current_file = Path(__file__).resolve()
+        project_root = current_file.parents[1]
+        resource_path = project_root / "Resources" / "baby_botle_registry" / "craftings" / "base" /"bottle.json"
+
+        if os.path.exists(resource_path):
+
+            content = open(resource_path, 'r').read()
+            array_content = json.loads(content)
+
+            for glasses in self.glass_textures:
+                for covers in self.cover_textures:
+                    for contents in self.content_textures:
+
+                        if "key" in array_content:
+
+                            for glass_item in self.crafting_glass_assignment:
+                                if glass_item["file"] == glasses:
+                                    array_content["key"]["G"] = glass_item["item_name"]
+                                pass
+
+                            for cover_item in self.crafting_cover_assignment:
+                                if cover_item["file"] == covers:
+                                    array_content["key"]["C"] = cover_item["item_name"]
+                                pass
+
+                            for content_item in self.crafting_content_assignment:
+                                if content_item["file"] == contents:
+                                    array_content["key"]["M"] = content_item["item_name"]
+                                pass
+
+                            file_name = self._format_to_file_name(glasses, contents, covers)
+                            empty_name = self._format_to_human_name('empty_content.png')
+                            empty_variation = self._format_to_file_name(glasses, 'empty_content.png', covers)
+
+                            if "result" in array_content:
+                                if "components" in array_content["result"]:
+                                    if "minecraft:custom_model_data" in array_content["result"]["components"]:
+                                        array_content["result"]["components"]["minecraft:custom_model_data"]["strings"] = [file_name]
+                                        pass
+
+                                    human_name = self._format_to_human_name(contents)
+
+                                    if "minecraft:custom_name" in array_content["result"]["components"]:
+                                        array_content["result"]["components"]["minecraft:custom_name"] = '\"' + human_name + '\"'
+                                        pass
+
+                                    #empty variation
+                                    if "minecraft:use_remainder" in array_content["result"]["components"]:
+                                        if "components" in array_content["result"]["components"]["minecraft:use_remainder"]:
+                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_name"] = '\"' + empty_name + '\"'
+                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_model_data"]["strings"] = [empty_variation]
+                                            pass
+                                        pass
+                                    pass
+                                pass
+
+
+
+
+                            with (open(os.path.join(self.crafting_out_path, f'{file_name}.json'), "w") as
+                                  file
+                                  ):
+                                file.write(json.dumps(array_content, indent=4, skipkeys=True))
+
+                            pass
+
+                        pass
+
+        pass
