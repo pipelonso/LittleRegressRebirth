@@ -1,3 +1,5 @@
+tellraw @a "patito"
+
 execute as @s at @s run tellraw @s[scores={lrlang = 0}] {"text": "-- SETTINGS --", "color": "yellow", "bold": true}
 execute as @s at @s run tellraw @s[scores={lrlang = 1}] {"text": "-- CONFIGURACIONES --", "color": "yellow", "bold": true}
 
