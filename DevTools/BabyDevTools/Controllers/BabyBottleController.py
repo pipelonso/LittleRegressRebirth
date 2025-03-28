@@ -46,7 +46,7 @@ class BabyBottleController:
             {"file": "blue_glass_texture.png", "item_name": "minecraft:blue_stained_glass"},
             {"file": "green_glass_texture.png", "item_name": "minecraft:green_stained_glass"},
             {"file": "red_glass_texture.png", "item_name": "minecraft:red_stained_glass"},
-            {"file": "transparent_glass_texture.png", "item_name": "minecraft:blue_stained_glass"},
+            {"file": "transparent_glass_texture.png", "item_name": "minecraft:glass"},
             {"file": "yellow_glass_texture.png", "item_name": "minecraft:yellow_stained_glass"}
         ]
 
@@ -189,15 +189,28 @@ class BabyBottleController:
         current_file = Path(__file__).resolve()
         project_root = current_file.parents[1]
         resource_path = project_root / "Resources" / "baby_botle_registry" / "craftings" / "base" /"bottle.json"
+        empty_resource_path = project_root / "Resources" / "baby_botle_registry" / "craftings" / "base" /"empty_bottle.json"
 
         if os.path.exists(resource_path):
 
-            content = open(resource_path, 'r').read()
-            array_content = json.loads(content)
+            with_content = open(resource_path, 'r').read()
+            without_content = open(empty_resource_path, 'r').read()
+
+            with_content_array_content = json.loads(with_content)
+            empty_array_content = json.loads(without_content)
 
             for glasses in self.glass_textures:
                 for covers in self.cover_textures:
                     for contents in self.content_textures:
+
+                        use_empty_generation = False
+
+                        array_content = with_content_array_content
+
+                        if contents == 'empty_content.png':
+                            use_empty_generation = True
+                            array_content = empty_array_content
+                            pass
 
                         if "key" in array_content:
 
@@ -211,10 +224,11 @@ class BabyBottleController:
                                     array_content["key"]["C"] = cover_item["item_name"]
                                 pass
 
-                            for content_item in self.crafting_content_assignment:
-                                if content_item["file"] == contents:
-                                    array_content["key"]["M"] = content_item["item_name"]
-                                pass
+                            if not use_empty_generation:
+                                for content_item in self.crafting_content_assignment:
+                                    if content_item["file"] == contents:
+                                        array_content["key"]["M"] = content_item["item_name"]
+                                    pass
 
                             file_name = self._format_to_file_name(glasses, contents, covers)
                             empty_name = self._format_to_human_name('empty_content.png')
@@ -229,13 +243,13 @@ class BabyBottleController:
                                     human_name = self._format_to_human_name(contents)
 
                                     if "minecraft:custom_name" in array_content["result"]["components"]:
-                                        array_content["result"]["components"]["minecraft:custom_name"] = '\"' + human_name + '\"'
+                                        array_content["result"]["components"]["minecraft:custom_name"] = human_name
                                         pass
 
                                     #empty variation
                                     if "minecraft:use_remainder" in array_content["result"]["components"]:
                                         if "components" in array_content["result"]["components"]["minecraft:use_remainder"]:
-                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_name"] = '\"' + empty_name + '\"'
+                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_name"] = empty_name
                                             array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_model_data"]["strings"] = [empty_variation]
                                             pass
                                         pass
