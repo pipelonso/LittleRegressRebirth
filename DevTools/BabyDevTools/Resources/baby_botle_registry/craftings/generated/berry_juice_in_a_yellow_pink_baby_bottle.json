@@ -3,8 +3,8 @@
     "category": "misc",
     "key": {
         "G": "minecraft:yellow_stained_glass",
-        "C": "minecraft:white_concrete",
-        "M": "minecraft:berry"
+        "C": "minecraft:pink_concrete",
+        "M": "minecraft:sweet_berries"
     },
     "pattern": [
         "GCG",

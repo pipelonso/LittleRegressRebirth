@@ -53,13 +53,13 @@ class BabyBottleController:
         self.crafting_cover_assignment = [
             {"file": "blue_cover.png", "item_name": "minecraft:blue_concrete"},
             {"file": "green_cover.png", "item_name": "minecraft:green_concrete"},
-            {"file": "punk_cover.png", "item_name": "minecraft:punk_concrete"},
+            {"file": "pink_cover.png", "item_name": "minecraft:pink_concrete"},
             {"file": "yellow_cover.png", "item_name": "minecraft:yellow_concrete"}
         ]
 
         self.crafting_content_assignment = [
             {"file": "apple_juice_content.png", "item_name": "minecraft:apple"},
-            {"file": "berry_juice_content.png", "item_name": "minecraft:berry"},
+            {"file": "berry_juice_content.png", "item_name": "minecraft:sweet_berries"},
             {"file": "empty_content.png", "item_name": ""},
             {"file": "milk_content.png", "item_name": "minecraft:milk_bucket"},
             {"file": "water_content.png", "item_name": "minecraft:water_bucket"}
