@@ -169,3 +169,6 @@ tellraw @a[scores={lrlang = 1}] {"text": "Esta version puede contener bugs, pued
 tellraw @a[scores={lrlang = 1}] ""
 tellraw @a[scores={lrlang = 1}] {"text": " [ CONFIGURACION ] ", "color": "green" , "click_event": {"action": "run_command", "command": "/function exec:chat/settings"} }
 
+# songs implements https://www.curseforge.com/minecraft/texture-packs/custom-sound-template
+
+
