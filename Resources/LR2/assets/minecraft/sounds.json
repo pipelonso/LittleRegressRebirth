@@ -1,0 +1,27 @@
+{
+	"custom.p_one": {
+		"sounds": [
+			"custom/p_one"
+		]
+	},
+	"custom.p_two": {
+		"sounds": [
+			"custom/p_two"
+		]
+	},
+	"custom.p_three": {
+		"sounds": [
+			"custom/p_three"
+		]
+	},
+	"custom.p_four": {
+		"sounds": [
+			"custom/p_four"
+		]
+	},
+	"custom.tab": {
+		"sounds": [
+			"custom/tab"
+		]
+	}
+}
