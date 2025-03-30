@@ -151,6 +151,10 @@ scoreboard objectives add ckfvalidcase dummy
 scoreboard objectives add lrbottle dummy
 scoreboard objectives add lrbottleuse minecraft.used:emerald
 
+scoreboard objectives add lrenpeesounds dummy "enble pee sounds"
+scoreboard objectives add lrenpoosounds dummy "enble poo sounds"
+scoreboard objectives add lrenguisounds dummy "enble gui sounds"
+
 function exec:lists/clotles/diapers
 
 #english
