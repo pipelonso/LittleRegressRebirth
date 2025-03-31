@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "boat",
+    "key": {
+      "#": "minecraft:string",
+      "o": [
+        "minecraft:paper"
+      ],
+      "_": [
+        "minecraft:white_wool"
+      ],
+      "i": [
+        "minecraft:paper"
+      ]
+    },
+    "pattern": [
+      "###",
+      "o_o",
+      "oio"
+    ],
+    "result": {
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "white_nappy"
+          ]
+        },
+        "minecraft:custom_data": {
+          "index": 0,
+          "padding": 0,
+          "on_nappy":1
+        },
+        "minecraft:custom_name": {"text":"White Nappy", "color": "white", "bold": true, "italic": false},
+        "minecraft:equippable": {
+          "slot": "legs",
+          "equip_sound": "minecraft:block.wool.place",
+          "asset_id": "minecraft:white_nappy"
+        }
+      },
+      "count": 1,
+      "id": "minecraft:iron_leggings"
+    }
+  }

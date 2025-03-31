@@ -2,3 +2,7 @@
 .idea
 .pyc
 *.cpython-311.pyc
+/out
+*_pycache_
+pyc
+*.pyc

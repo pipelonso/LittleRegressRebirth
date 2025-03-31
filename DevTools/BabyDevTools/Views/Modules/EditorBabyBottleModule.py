@@ -58,4 +58,6 @@ class EditorBabyBottleModule:
 
     def generate_presets(self):
         self.baby_bottle_controller.generate_variations()
+        self.baby_bottle_controller.generate_model_content()
+        self.baby_bottle_controller.generate_crafting_content_exports()
         pass

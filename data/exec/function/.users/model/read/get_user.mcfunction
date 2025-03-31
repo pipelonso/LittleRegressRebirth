@@ -1,0 +1,2 @@
+$tellraw @s {"text": "model.users.user.\"$(uuid0)\".\"$(uuid1)\".\"$(uuid2)\".\"$(uuid3)\"", "color": "red"}
+$data modify storage cubikframework model.users.cache.user.selected set from storage cubikframework model.users.user."$(uuid0)"."$(uuid1)"."$(uuid2)"."$(uuid3)"
