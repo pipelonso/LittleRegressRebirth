@@ -17,6 +17,8 @@ execute as @a at @a unless score @s lragescale matches 0 run execute unless scor
 execute as @a at @a run function exec:detections/is_selected_bottle
 execute as @a at @a run execute if score @s lrbottle matches 1 run execute if score @s lrbottleuse matches 1.. run function exec:mechanics/bottles/use_bottle
 
+execute as @a at @a run function exec:detections/is_on_nappy
+
 execute as @a at @a if score @s lrpeemeter matches 1.. run function exec:mechanics/potty/pee_updater
 
 

@@ -28,7 +28,8 @@
         },
         "minecraft:custom_data": {
           "index": 2,
-          "padding": 0
+          "padding": 0,
+          "on_nappy":1
         },
         "minecraft:custom_name": {"text":"Pink Nappy", "color":"red", "bold":true, "italic": false},
         "minecraft:equippable": {
