@@ -69,6 +69,27 @@
           "type": "model",
           "model": "item/pink_nappy_poo"
         }
+      },
+      {
+        "when": "red_star_nappy",
+        "model": {
+          "type": "model",
+          "model": "item/red_star_nappy"
+        }
+      },
+      {
+        "when": "red_star_nappy_pee",
+        "model": {
+          "type": "model",
+          "model": "item/red_star_nappy_pee"
+        }
+      },
+      {
+        "when": "red_star_nappy_poo",
+        "model": {
+          "type": "model",
+          "model": "item/red_star_nappy_poo"
+        }
       }
     ]
   }
