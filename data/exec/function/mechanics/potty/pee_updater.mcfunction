@@ -4,4 +4,8 @@ execute if score @s lrpeemeter matches 5.. run scoreboard players add @s lrpeeti
 execute if score @s lrpeemeter matches 6.. run scoreboard players add @s lrpeetime 10
 
 
-execute if score @s lrpeetime matches 12000.. run function exec:animation/diaper/pee/wetting
+execute if score @s lrpeetime matches 12000.. run scoreboard players set @s lrpeeanimplay 1
+execute if score @s lrpeetime matches 12000.. run execute if score @s lronnappy matches 1 run function exec:animation/diaper/pee/wetting
+execute if score @s lrpeetime matches 12000.. run execute if score @s lronnappy matches 0 run function exec:animation/diaper/pee/peeing
+
+

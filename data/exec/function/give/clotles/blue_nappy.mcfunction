@@ -1,3 +1,3 @@
-execute as @s at @s run give @s minecraft:iron_leggings[ custom_model_data={strings:['blue_nappy']}, custom_name={"text":"Blue Nappy", "italic":false} ,lore=[{"text":"Place on pants slot","italic":false}] ,minecraft:equippable={slot:legs, asset_id:"minecraft:blue_nappy_scaled", equip_sound:"block.wool.place"}, minecraft:custom_data={padding: 0, index:1, is_nappy:1}, unbreakable={}]
+execute as @s at @s run give @s minecraft:iron_leggings[ custom_model_data={strings:['blue_nappy']}, custom_name={"text":"Blue Nappy", "italic":false} ,lore=[{"text":"Place on pants slot","italic":false}] ,minecraft:equippable={slot:legs, asset_id:"minecraft:blue_nappy", equip_sound:"block.wool.place"}, minecraft:custom_data={padding: 0, index:1, is_nappy:1}, unbreakable={}]
 
 # show_in_tooltip:true
