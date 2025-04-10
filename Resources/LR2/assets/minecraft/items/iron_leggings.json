@@ -90,6 +90,27 @@
           "type": "model",
           "model": "item/red_star_nappy_poo"
         }
+      },
+      {
+        "when": "gray_kitty_nappy",
+        "model": {
+          "type": "model",
+          "model": "item/gray_kitty_nappy"
+        }
+      },
+      {
+        "when": "gray_kitty_nappy_pee",
+        "model": {
+          "type": "model",
+          "model": "item/gray_kitty_nappy_pee"
+        }
+      },
+      {
+        "when": "gray_kitty_nappy_poo",
+        "model": {
+          "type": "model",
+          "model": "item/gray_kitty_nappy_poo"
+        }
       }
     ]
   }

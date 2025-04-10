@@ -1,0 +1,7 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "item/gray_kitty_nappy_pee"
+    }
+  }
+  
