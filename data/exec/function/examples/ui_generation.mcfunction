@@ -1,0 +1,1 @@
+execute as @s at @s run summon item_display ~ ~1 ~ {item:{id:"minecraft:carrot_on_a_stick", count:1b, components:{"minecraft:custom_model_data":{"strings":["ui_test"]}}} , transformation:[0f,0f,2f,0f,0f,2f,0f,0f,-2f,0f,0f,0f,0f,0f,0f,1f], Tags:["bonito"], brightness:{sky:15, block:15}}

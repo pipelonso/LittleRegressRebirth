@@ -13,6 +13,13 @@
           "type": "model",
           "model": "item/crib"
         }
+      },
+      {
+        "when": "ui_test",
+        "model": {
+          "type": "model",
+          "model": "item/ui_test"
+        }
       }
     ]
   }
