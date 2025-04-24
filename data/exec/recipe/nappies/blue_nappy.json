@@ -29,7 +29,7 @@
         "minecraft:custom_data": {
           "index": 1,
           "padding": 0,
-          "on_nappy":1
+          "is_nappy":1
         },
         "minecraft:custom_name": {"text":"Blue Nappy", "color": "blue", "bold": true, "italic": false},
         "minecraft:equippable": {
