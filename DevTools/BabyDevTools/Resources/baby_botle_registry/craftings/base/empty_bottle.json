@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "minecraft:glass",
-    "C": "minecraft:white_concrete"
+    "C": "minecraft:white_concrete",
+    "G": "minecraft:glass"
   },
   "pattern": [
-    "GCG",
-    "G G",
-    "GGG"
+    " C ",
+    "GGG",
+    "   "
   ],
   "result": {
     "components": {

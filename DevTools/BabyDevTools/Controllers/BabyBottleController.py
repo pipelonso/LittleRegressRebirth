@@ -196,76 +196,100 @@ class BabyBottleController:
             with_content = open(resource_path, 'r').read()
             without_content = open(empty_resource_path, 'r').read()
 
-            with_content_array_content = json.loads(with_content)
-            empty_array_content = json.loads(without_content)
+            base_with_content_recipe = json.loads(with_content)
+            base_empty_recipe = json.loads(without_content)
 
             for glasses in self.glass_textures:
                 for covers in self.cover_textures:
                     for contents in self.content_textures:
 
-                        use_empty_generation = False
-
-                        array_content = with_content_array_content
+                        file_name = self._format_to_file_name(glasses, contents, covers)
+                        human_name = self._format_to_human_name(contents)
 
                         if contents == 'empty_content.png':
-                            use_empty_generation = True
-                            array_content = empty_array_content
-                            pass
+                            # Handle empty bottles
+                            array_content = json.loads(json.dumps(base_empty_recipe)) # Deep copy
 
-                        if "key" in array_content:
+                            # Ensure result uses "item" instead of "id"
+                            if "result" in array_content and "id" in array_content["result"]:
+                                array_content["result"]["item"] = array_content["result"].pop("id")
 
-                            for glass_item in self.crafting_glass_assignment:
-                                if glass_item["file"] == glasses:
-                                    array_content["key"]["G"] = glass_item["item_name"]
-                                pass
+                            if "key" in array_content:
+                                # For empty bottles, keys are simple strings as per empty_bottle.json and original logic
+                                for glass_item in self.crafting_glass_assignment:
+                                    if glass_item["file"] == glasses:
+                                        array_content["key"]["G"] = glass_item["item_name"]
+                                for cover_item in self.crafting_cover_assignment:
+                                    if cover_item["file"] == covers:
+                                        array_content["key"]["C"] = cover_item["item_name"]
 
-                            for cover_item in self.crafting_cover_assignment:
-                                if cover_item["file"] == covers:
-                                    array_content["key"]["C"] = cover_item["item_name"]
-                                pass
+                            if "result" in array_content and "components" in array_content["result"]:
+                                # Ensure these components are correctly structured as per base files
+                                array_content["result"]["components"]["minecraft:custom_model_data"] = {"strings": [file_name]}
+                                array_content["result"]["components"]["minecraft:custom_name"] = human_name
 
-                            if not use_empty_generation:
+                                # Ensure use_remainder also uses "item" if it exists and has an id
+                                if "minecraft:use_remainder" in array_content["result"]["components"] and \
+                                   "id" in array_content["result"]["components"]["minecraft:use_remainder"]:
+                                    array_content["result"]["components"]["minecraft:use_remainder"]["item"] = \
+                                        array_content["result"]["components"]["minecraft:use_remainder"].pop("id")
+                                # Original logic for empty bottle's use_remainder (if any specific variation is needed)
+                                # This part might need review based on how empty_bottle.json is structured
+                                # For now, assume it correctly sets up the empty bottle output
+                                empty_variation_name_for_remainder = self._format_to_file_name(glasses, 'empty_content.png', covers)
+                                empty_human_name_for_remainder = self._format_to_human_name('empty_content.png')
+                                if "minecraft:use_remainder" in array_content["result"]["components"]:
+                                    if "components" in array_content["result"]["components"]["minecraft:use_remainder"]:
+                                        remainder_comps = array_content["result"]["components"]["minecraft:use_remainder"]["components"]
+                                        if "minecraft:custom_name" in remainder_comps:
+                                            remainder_comps["minecraft:custom_name"] = empty_human_name_for_remainder
+                                        if "minecraft:custom_model_data" in remainder_comps:
+                                             remainder_comps["minecraft:custom_model_data"]["strings"] = [empty_variation_name_for_remainder]
+
+                        else:
+                            # Handle bottles with content
+                            array_content = json.loads(json.dumps(base_with_content_recipe)) # Deep copy
+
+                            empty_bottle_filename = self._format_to_file_name(glasses, 'empty_content.png', covers)
+
+                            if "key" in array_content:
+                                # Set glass, cover, and content materials
+                                for glass_item in self.crafting_glass_assignment:
+                                    if glass_item["file"] == glasses:
+                                        array_content["key"]["G"] = {"item": glass_item["item_name"]}
+                                for cover_item in self.crafting_cover_assignment:
+                                    if cover_item["file"] == covers:
+                                        array_content["key"]["C"] = {"item": cover_item["item_name"]}
                                 for content_item in self.crafting_content_assignment:
                                     if content_item["file"] == contents:
-                                        array_content["key"]["M"] = content_item["item_name"]
-                                    pass
+                                        array_content["key"]["M"] = {"item": content_item["item_name"]}
 
-                            file_name = self._format_to_file_name(glasses, contents, covers)
-                            empty_name = self._format_to_human_name('empty_content.png')
-                            empty_variation = self._format_to_file_name(glasses, 'empty_content.png', covers)
+                                # Add empty bottle as an ingredient
+                                array_content["key"]["E"] = {
+                                    "item": "minecraft:emerald", # As per instruction
+                                    "components": {
+                                        "minecraft:custom_model_data": {
+                                            "strings": [empty_bottle_filename]
+                                        }
+                                    }
+                                }
 
                             if "result" in array_content:
+                                array_content["result"]["item"] = "minecraft:emerald" # Assuming the result item is also an emerald
                                 if "components" in array_content["result"]:
-                                    if "minecraft:custom_model_data" in array_content["result"]["components"]:
-                                        array_content["result"]["components"]["minecraft:custom_model_data"]["strings"] = [file_name]
-                                        pass
+                                    array_content["result"]["components"]["minecraft:custom_model_data"] = {"strings": [file_name]}
+                                    array_content["result"]["components"]["minecraft:custom_name"] = human_name
 
-                                    human_name = self._format_to_human_name(contents)
-
-                                    if "minecraft:custom_name" in array_content["result"]["components"]:
-                                        array_content["result"]["components"]["minecraft:custom_name"] = human_name
-                                        pass
-
-                                    #empty variation
+                                    # Remove use_remainder for content bottles
                                     if "minecraft:use_remainder" in array_content["result"]["components"]:
-                                        if "components" in array_content["result"]["components"]["minecraft:use_remainder"]:
-                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_name"] = empty_name
-                                            array_content["result"]["components"]["minecraft:use_remainder"]["components"]["minecraft:custom_model_data"]["strings"] = [empty_variation]
-                                            pass
-                                        pass
-                                    pass
-                                pass
+                                        del array_content["result"]["components"]["minecraft:use_remainder"]
 
+                        # Write the modified recipe to a JSON file
+                        if not os.path.exists(self.crafting_out_path):
+                            os.makedirs(self.crafting_out_path)
 
-
-
-                            with (open(os.path.join(self.crafting_out_path, f'{file_name}.json'), "w") as
-                                  file
-                                  ):
-                                file.write(json.dumps(array_content, indent=4, skipkeys=True))
-
-                            pass
-
-                        pass
+                        with open(os.path.join(self.crafting_out_path, f'{file_name}.json'), "w") as file:
+                            file.write(json.dumps(array_content, indent=4, skipkeys=True))
+            pass
 
         pass

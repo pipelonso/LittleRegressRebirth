@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "minecraft:glass",
     "C": "minecraft:white_concrete",
+    "E": "minecraft:emerald",
     "M": "minecraft:milk_bucket"
   },
   "pattern": [
-    "GCG",
-    "GMG",
-    "GGG"
+    " C ",
+    " E ",
+    " M "
   ],
   "result": {
     "components": {
