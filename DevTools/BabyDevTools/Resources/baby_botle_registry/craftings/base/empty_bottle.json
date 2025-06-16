@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "LittleRegress",
   "category": "misc",
   "key": {
     "G": "minecraft:glass",
@@ -24,12 +25,6 @@
         "id": "minecraft:emerald",
         "components": {
           "minecraft:custom_name": "\"Pepito\"",
-          "minecraft:consumable": {
-            "consume_seconds": 10,
-            "animation": "drink",
-            "sound": "minecraft:item.honey_bottle.drink",
-            "has_consume_particles": false
-          },
           "minecraft:custom_data": {
             "type": "1",
             "empty_name": "",

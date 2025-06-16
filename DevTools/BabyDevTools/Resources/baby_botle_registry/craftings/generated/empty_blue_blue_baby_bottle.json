@@ -17,12 +17,6 @@
                     "empty_blue_blue_baby_bottle"
                 ]
             },
-            "minecraft:consumable": {
-                "consume_seconds": 10,
-                "animation": "drink",
-                "sound": "minecraft:item.honey_bottle.drink",
-                "has_consume_particles": false
-            },
             "minecraft:custom_data": {
                 "type": "1"
             },
@@ -30,14 +24,11 @@
                 "id": "minecraft:emerald",
                 "components": {
                     "minecraft:custom_name": "Empty Baby Bottle",
-                    "minecraft:consumable": {
-                        "consume_seconds": 10,
-                        "animation": "drink",
-                        "sound": "minecraft:item.honey_bottle.drink",
-                        "has_consume_particles": false
-                    },
                     "minecraft:custom_data": {
-                        "type": "1"
+                        "type": "1",
+                        "empty_name": "",
+                        "string_name": "",
+                        "is_empty": "1"
                     },
                     "minecraft:custom_model_data": {
                         "strings": [

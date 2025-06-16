@@ -20,6 +20,13 @@
           "type": "model",
           "model": "item/ui_test"
         }
+      },
+      {
+        "when": "bottle_table",
+        "model": {
+          "type": "model",
+          "model": "item/bottle_table/bottle_maker"
+        }
       }
     ]
   }

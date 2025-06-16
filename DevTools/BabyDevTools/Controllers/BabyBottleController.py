@@ -94,6 +94,56 @@ class BabyBottleController:
             name = (extract.replace('_', ' ').title() + ' in a Baby Bottle')
         return name
 
+    def generate_empty_variations(self):
+
+        current_file = Path(__file__).resolve()
+        project_root = current_file.parents[1]
+        resource_path = project_root / "Resources" / "baby_botle_registry" / "generated" / "baby_botle_base.json"
+
+        if os.path.exists(resource_path):
+            content = open(resource_path, 'r').read()
+            array_content = json.loads(content)
+
+            if 'textures' in array_content:
+
+                if (
+                        str(self.order_glass) in array_content['textures']
+                        and str(self.order_content) in array_content['textures']
+                        and str(self.order_cover) in array_content['textures']
+                        and str(self.order_particle) in array_content['textures']
+                ):
+
+                    human_names = []
+                    file_names = []
+                    empty_generations = []
+
+                    for glasses in self.glass_textures:
+                        for covers in self.cover_textures:
+
+                            empty_generations.append(
+                                self._format_to_file_name(glasses, 'empty_content.png', covers)
+                            )
+
+                            array_content['textures'][str(self.order_glass)] = (
+                                    'item/glass/' + glasses.replace('.png', '')
+                            )
+                            array_content['textures'][str(self.order_cover)] = (
+                                    'item/cover/' + covers.replace('.png', '')
+                            )
+                            array_content['textures'][str(self.order_content)] = (
+                                    'item/content/' + 'empty_content.png'
+                            )
+
+                            file_name = self._format_to_file_name(glasses, 'empty_content.png', covers)
+
+                            file_names.append(file_name)
+                            human_names.append(self._format_to_human_name('empty_content.png'))
+
+                            with (open(os.path.join(self.out_path, f'{file_name}.json'), "w") as
+                                  file
+                                  ):
+                                file.write(json.dumps(array_content, indent=10, skipkeys=True))
+
     def generate_variations(self):
 
         current_file = Path(__file__).resolve()
