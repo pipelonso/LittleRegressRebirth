@@ -14,6 +14,7 @@ execute as @a at @a unless score @s lrenpoosounds matches 0 run execute unless s
 execute as @a at @a unless score @s lrenguisounds matches 0 run execute unless score @s lrenguisounds matches 1 run scoreboard players set @s lrenguisounds 1
 execute as @a at @a unless score @s lragescale matches 0 run execute unless score @s lragescale matches 1 run scoreboard players set @s lragescale 0
 
+execute as @a at @a run function exec:detections/bottle_table
 execute as @a at @a run function exec:detections/is_selected_bottle
 execute as @a at @a run execute if score @s lrbottle matches 1 run execute if score @s lrbottleuse matches 1.. run function exec:mechanics/bottles/use_bottle
 

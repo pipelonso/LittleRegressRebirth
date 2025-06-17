@@ -1,1 +1,2 @@
 execute as @s at @s run summon item_display ~0 ~0.5 ~0 {item:{id:"minecraft:carrot_on_a_stick", count:1b,components:{"minecraft:custom_model_data":{"strings":["bottle_table"]}}}, transformation:[0f,0f,1f,0f,0f,1f,0f,0f,-1f,0f,0f,0f,0f,0f,0f,1f]}
+execute as @s at @s run summon minecraft:interaction ~ ~0.1 ~ {width:0.5f,height:0.5f,response:1b,Tags:["bttest"]}
